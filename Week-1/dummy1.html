@@ -1,140 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="Assign.css" />
-  </head>
-  <body>
-    <div
-      style="
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 800px;
-        width: 6%;
-        background-color: green;
-        float: left;
-        padding: 10px;
-      "
-    >
-      <i class="fa fa-step-backward"></i>
-      <i class="fa fa-stop"></i>
-      <i class="fa fa-step-forward"></i>
-      <i class="fa fa-refresh"></i>
-      <i class="fa fa-random"></i>
-    </div>
-    <div style="width: 94%">
-      <div class="headingT">
-        <div class="imageHead">
-          <img
-            src="https://uploads.codesandbox.io/uploads/user/a8233562-b36b-483d-9de9-5a1ac148fb0c/2Eq--cattyboard.jpg"
-          />
-        </div>
-        <div>
-          <span>
-            <h1>CattyBoard Top 100 Single Charts(11.06.36)</h1>
-            unknown artist<br
-          /></span>
-          <span>2016.charts.100songs</span>
-          <div>
-            <i class="fa fa-play"></i> playAll &nbsp;&nbsp;&nbsp;
-            <i class="fa fa-plus"></i> add all &nbsp;&nbsp;&nbsp;
-            <i class="fa fa-ellipsis-h"></i>
-          </div>
-        </div>
-        <div style="margin-bottom: 30px;">
-          <table class="mainTab">
-            <tr class="tabR">
-              <td class="tabT">1.dance</td>
-              <td class="tabT">Creak fit</td>
-              <td class="tabT">2:54</td>
-              <td class="tabT">
-                <a href=""
-                  ><input
-                    type="button"
-                    value="CATTY CLOUD SYNC"
-                    style="color: blue"
-                  />
-                </a>
-              </td>
-            </tr>
-            <tr class="tabR">
-              <td class="tabT">2.panda</td>
-              <td class="tabT">Cattee</td>
-              <td class="tabT">4:06</td>
-              <td class="tabT">
-                <a href=""
-                  ><input
-                    type="button"
-                    value="CATTY CLOUD SYNC"
-                    style="color: blue"
-                  />
-                </a>
-              </td>
-            </tr>
-            <tr class="tabR">
-              <td class="tabT">3.Can't Stop The Feeling!</td>
-              <td class="tabT">Catin Climberlake</td>
-              <td class="tabT">3:56</td>
-              <td class="tabT">
-                <a href=""
-                  ><input
-                    type="button"
-                    value="CATTY CLOUD SYNC"
-                    style="color: blue"
-                  />
-                </a>
-              </td>
-            </tr>
-            <tr class="tabR">
-              <td class="tabT">4.Work From Home</td>
-              <td class="tabT">Cat Harmony Feat Colla</td>
-              <td class="tabT">3:36</td>
-              <td class="tabT">
-                <a href=""
-                  ><input
-                    type="button"
-                    value="CATTY CLOUD SYNC"
-                    style="color: blue"
-                  />
-                </a>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div
-          class="footer"
-          style="
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-          "
-        >
-          <div>
-            <img
-              class="footerImg"
-              src="https://uploads.codesandbox.io/uploads/user/a8233562-b36b-483d-9de9-5a1ac148fb0c/2Eq--cattyboard.jpg"
-            />
-          </div>
-          <div>
-            <span>
-              If I Ain't Love<br />
-              Caston Derulo
-            </span>
-          </div>
 
-          <i class="fa fa-step-backward"></i>
-          <i class="fa fa-stop"></i>
-          <i class="fa fa-step-forward"></i>
-          <i class="fa fa-refresh"></i>
-          <i class="fa fa-random"></i>
-        </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+    <link rel="stylesheet" href="Assign.css" />
+    <style>
+      .box{
+        position: fixed;
+        left: 30%;
+        bottom: 30%;
+        height: 30%;
+        width: 30%;
+        background-color: #0e86d4;
+        color: white;
+        transition-property: transform;
+      }
+      .box:hover{
+        transform: rotate3d(45deg);
+      }
+      #app{
+        width: 100px;
+        height: 100px;
+        background-color: #0e86d4;
+        transition-property: transform;
+        transition-duration: 5s;
+        transition-timing-function: ease;
+      }
+      #app:hover{
+        transform: rotate3d(90deg);
+      }
+    </style>
+  </head>
+  <body style="align-content: center;">
+    <div class="box">
+      <div style="display : flex-direction; align-content: center; background-color: aquamarine; 
+      width: 25px; height: 25px;">
       </div>
     </div>
+    <div id="app"></div>
+    
   </body>
 </html>
