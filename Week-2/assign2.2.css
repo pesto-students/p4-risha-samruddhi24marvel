@@ -1,0 +1,84 @@
+div#main .titled {
+  position: absolute;
+  align-self: center;
+  padding: 90px;
+  visibility: hidden;
+}
+div#main {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid;
+  margin-top: 200;
+  margin: auto;
+}
+div#main .topleft {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 0px;
+  background: red;
+}
+div#main .topright {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 0px;
+  background: yellow;
+}
+
+div#main .bottomleft {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 0px;
+  background: blue;
+}
+
+div#main .bottomleft {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 0px;
+  background: blue;
+}
+
+div#main .bottomright {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 0px;
+  background: green;
+}
+div#main:hover .topleft {
+  transform: rotate(90deg);
+  transform-origin: top left;
+  transition: 2s;
+  width: 100px;
+  height: 100px;
+  margin: -25px;
+}
+div#main:hover .topright {
+  transform: rotate(-90deg);
+  transform-origin: top right;
+  transition: 2s;
+}
+div#main:hover .bottomleft {
+  transform: rotate(30deg);
+  transform-origin: bottom left;
+  transition: 2s;
+}
+div#main:hover .bottomright {
+  transform: rotate(30deg);
+  transform-origin: bottom right;
+  transition: 2s;
+}
+div#main:hover .titled {
+  visibility: visible;
+}
