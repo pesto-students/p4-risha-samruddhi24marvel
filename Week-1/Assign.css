@@ -1,0 +1,51 @@
+.heading {
+  background-color: black;
+}
+.headingT {
+  color: white;
+  font-family: lato;
+  display:flex; 
+  background-color: black;
+}
+.imageHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 20px;
+  padding: 50px;
+}
+.mainTab {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabT,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.tabR:nth-child(even) {
+  background-color: #dddddd;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+  background-color: #0e86d4;
+  color: white;
+}
+.footerImg {
+  height: 50px;
+  width: 50 px;
+}
+.space {
+  float: left;
+  width: 100%;
+  padding: 30px;
+}
