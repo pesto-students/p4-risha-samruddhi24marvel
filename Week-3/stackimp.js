@@ -15,4 +15,5 @@ const stack = createStack();
 stack.push(10);
 stack.push(5);
 stack.pop(); // => 5stack.items;// => [10]
-stack.items;// = [10,11,12];// Encapsulationbroken!functioncreateStack() );
+//stack.items = [14,11,12];// Encapsulationbroken!functioncreateStack() );
+console.log(stack.items);
