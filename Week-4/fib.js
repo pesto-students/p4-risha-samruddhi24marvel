@@ -1,13 +1,16 @@
 const obj = (n)=>({
     [Symbol.iterator](){
-       let nw =1;
+       let fibNUm =1;
        let old =0 ;
+       let nw=1;
         return{
                 next : () => {
-                    if(nw<=n){
-                        old = old + nw;
-                        nw++;
-                       return{value : old, done : false};
+                    if(fibNUm<=n){
+                        let val = old + nw;
+                        old=nw;    
+                        nw=val; 
+                        fibNUm++;
+                       return{value : val, done : false};
                     }else{
                         return{done:true};
                     }
@@ -16,4 +19,4 @@ const obj = (n)=>({
     }
 });
 
-console.log([...obj(5)]);
+console.log([...obj(6)]);
