@@ -76,7 +76,7 @@ function App() {
         const { isCompleted, todo } = el;
         return (
           <>
-            <p style={{ color: isCompleted ? "gren" : "red" }}>{el.todo}</p>
+            <p style={{ color: isCompleted ? "green" : "red" }}>{el.todo}</p>
             <button
               onClick={() => {
                 const newTodosList = todos.map((el) => {
